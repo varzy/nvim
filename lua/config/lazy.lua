@@ -14,7 +14,6 @@ require("lazy").setup({
       import = "lazyvim.plugins",
       opts = {
         colorscheme = "catppuccin",
-        autoformat = false,
       },
     },
 

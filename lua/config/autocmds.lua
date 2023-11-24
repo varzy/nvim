@@ -8,3 +8,11 @@ vim.cmd([[
     autocmd BufNewFile,BufRead *.wxml setlocal filetype=xml
   augroup END
 ]])
+
+-- Disable autoformat for lua files
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  -- pattern = { "*" },
+  callback = function()
+    vim.g.autoformat = false
+  end,
+})
