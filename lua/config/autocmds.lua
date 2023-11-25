@@ -11,7 +11,7 @@ vim.cmd([[
 
 -- Disable autoformat for lua files
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  -- pattern = { "*" },
+  pattern = { "**" },
   callback = function()
     vim.g.autoformat = false
   end,
