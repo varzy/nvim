@@ -13,8 +13,8 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        -- colorscheme = "catppuccin",
-        colorscheme = "everforest",
+        colorscheme = "catppuccin",
+        -- colorscheme = "everforest",
       },
     },
 
@@ -40,7 +40,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" },
     -- util
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-    { import = "lazyvim.plugins.extras.util.project" },
+    -- { import = "lazyvim.plugins.extras.util.project" },
 
     -- import/override with your plugins
     { import = "plugins" },
